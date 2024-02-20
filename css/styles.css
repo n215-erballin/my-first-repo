@@ -21,5 +21,8 @@ p {
 }
 
 /* End of Reset */
+.wrapper {
+  max-width: 960px;
+}
 
 /*# sourceMappingURL=styles.css.map */
