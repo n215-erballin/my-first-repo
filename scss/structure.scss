@@ -21,4 +21,48 @@ p {
 
 .wrapper {
   max-width: 960px;
+  margin: 0 auto;
+  background-color: cadetblue;
+
+  .responbox {
+    width: 90%;
+    background-color: #20e7bf83;
+    min-height: 200px;
+    margin: 0 auto;
+    .boxes {
+      width: 100%;
+      min-height: 50px;
+      background-color: cyan;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      .left {
+        background-color: rgba(22, 5, 255, 0.349);
+        width: 300px;
+        min-height: 50px;
+      }
+      .right {
+        background-color: rgba(255, 0, 0, 0.466);
+        width: 300px;
+        min-height: 50px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 720px) {
+  .wrapper {
+    .responbox {
+      .boxes {
+        flex-direction: column;
+        .left {
+          width: 100%;
+        }
+        .right {
+          width: 100%;
+        }
+      }
+    }
+  }
 }

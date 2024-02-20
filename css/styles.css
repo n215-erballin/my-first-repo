@@ -23,6 +23,44 @@ p {
 /* End of Reset */
 .wrapper {
   max-width: 960px;
+  margin: 0 auto;
+  background-color: cadetblue;
+}
+.wrapper .responbox {
+  width: 90%;
+  background-color: rgba(32, 231, 191, 0.5137254902);
+  min-height: 200px;
+  margin: 0 auto;
+}
+.wrapper .responbox .boxes {
+  width: 100%;
+  min-height: 50px;
+  background-color: cyan;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.wrapper .responbox .boxes .left {
+  background-color: rgba(22, 5, 255, 0.349);
+  width: 300px;
+  min-height: 50px;
+}
+.wrapper .responbox .boxes .right {
+  background-color: rgba(255, 0, 0, 0.466);
+  width: 300px;
+  min-height: 50px;
+}
+
+@media all and (max-width: 720px) {
+  .wrapper .responbox .boxes {
+    flex-direction: column;
+  }
+  .wrapper .responbox .boxes .left {
+    width: 100%;
+  }
+  .wrapper .responbox .boxes .right {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
